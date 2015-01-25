@@ -1,0 +1,76 @@
+
+<!--=== Content Part ===-->
+<div class="container" data-ng-controller="AuthenticationController">
+	<!--Reg Block-->
+	<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
+	<div class="reg-block">
+		<div class="reg-block-header">
+			<h2>Sign In</h2>
+			<ul class="social-icons text-center">
+				<li><a class="rounded-x social_facebook" data-original-title="Facebook" href="/auth/facebook"></a></li>
+				<li><a class="rounded-x social_twitter" data-original-title="Twitter" href="/auth/twitter"></a></li>
+				<li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="/auth/google"></a></li>
+				<li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="/auth/linkedin"></a></li>
+				<li><a class="rounded-x social_github" data-original-title="Github" href="/auth/github"></a></li>
+			</ul>
+			<p>Don't Have Account? Click <a class="color-green" href="/#!/signup">Sign Up</a> to registration.</p>
+		</div>
+
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+			<input type="text" class="form-control" id="username" name="username" placeholder="Username"  class="form-control" data-ng-model="credentials.username">
+		</div>
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+			<input type="password" id="password" name="password" placeholder="password"  class="form-control" class="form-control" data-ng-model="credentials.password">
+		</div>
+		<hr>
+
+		<div class="checkbox">
+			<label>
+				<input type="checkbox">
+				<p>Always stay signed in</p>
+			</label>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<button type="submit" ng-class="class" ng-click="changeClass()" class="btn-u btn-block">Log In</button>
+
+			</div>
+		</div>
+		<div data-ng-show="error" class="text-center text-danger">
+			<strong data-ng-bind="error"></strong>
+		</div>
+		<hr>
+
+		<h4>Forget your Password ?</h4>
+		<p>no worries, <a class="color-green" href="/#!/password/forgot">click here</a> to reset your password.</p>
+	</div>
+	</form>
+	<toaster-container toaster-options="{'time-out': 3000, 'close-button':false,'progressBar':true, 'animation-class': 'toast-bottom-right'}"></toaster-container>
+	<!--End Reg Block-->
+</div><!--/container-->
+
+
+<script type="text/javascript">
+	$.backstretch([
+		"modules/users/img/bg/5.jpg",
+		"modules/users/img/bg/4.jpg",
+
+	], {
+		fade: 1000,
+		duration: 7000
+	});
+</script>
+<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 406px; width: 1903px; z-index: -999999; position: fixed;">
+	<img src="modules/users/img/bg/4.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1903px; height: 1263.7109375px; max-width: none; z-index: -999999; left: 0px; top: -428.85546875px;"></div>
+<!-- JS Customization -->
+
+<![endif]-->
+
+
+
+
+<!-- Mirrored from htmlstream.com/preview/unify-v1.6-production/page_login1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Nov 2014 19:06:16 GMT -->
+<div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;"></div>

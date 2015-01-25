@@ -1,0 +1,68 @@
+<div id="demo" class="container" data-ng-controller="AuthenticationController">
+	<!--Reg Block-->
+	<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
+	<div class="reg-block">
+		<div class="reg-block-header">
+			<h2>Sign Up</h2>
+			<ul class="social-icons text-center">
+				<li><a class="rounded-x social_facebook" data-original-title="Facebook" href="/auth/facebook"></a></li>
+				<li><a class="rounded-x social_twitter" data-original-title="Twitter" href="/auth/twitter"></a></li>
+				<li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="/auth/google"></a></li>
+				<li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="/auth/linkedin"></a></li>
+				<li><a class="rounded-x social_github" data-original-title="Github" href="/auth/github"></a></li>
+			</ul>
+			<p>Already Signed Up? Click <a class="color-green" href="/#!/signin">Sign In</a> to login your account.</p>
+		</div>
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="fa fa-user"></i></span>
+			<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Username">
+		</div>
+		<div class="input-group margin-bottom-20">
+		<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+		<input type="email" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
+	    </div>
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="fa fa-info"></i></span>
+			<input type="text" required id="firstName" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">
+		</div>
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="fa fa-info"></i></span>
+			<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">
+		</div>
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="fa fa-key"></i></span>
+			<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
+		</div>
+		<hr>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox">
+				<p>I read <a target="_blank" href="#">Terms and Conditions</a></p>
+			</label>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<button type="submit" class="btn-u btn-block " ng-class="class" ng-click="changeClass()">Register</button>
+			</div>
+		</div>
+		<div data-ng-show="error" class="text-center text-danger">
+			<strong data-ng-bind="error"></strong>
+		</div>
+	</div>
+	</form>
+	<toaster-container toaster-options="{'time-out': 3000,'position-class': 'toast-bottom-right'}"></toaster-container>
+	<!--End Reg Block-->
+</div>
+
+<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 406px; width: 1903px; z-index: -999999; position: fixed;">
+	<img src="modules/users/img/bg/4.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1903px; height: 1263.7109375px; max-width: none; z-index: -999999; left: 0px; top: -428.85546875px;"></div>
+<!-- JS Customization -->
+
+<![endif]-->
+
+
+
+
+<!-- Mirrored from htmlstream.com/preview/unify-v1.6-production/page_login1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Nov 2014 19:06:16 GMT -->
+<div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;"></div>
